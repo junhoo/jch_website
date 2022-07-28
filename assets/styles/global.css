@@ -1,0 +1,30 @@
+:root {
+  --nav-height: 5rem;
+}
+
+.multi-3-ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+
+.btn {
+  @apply cursor-pointer active:scale-90 transform transiton duration-300;
+}
+
+.page-enter-from {
+  opacity: 0.2;
+  transform: translateY(-45px);
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.45s;
+}
+
+.page-leave-to {
+  opacity: 0.2;
+}
