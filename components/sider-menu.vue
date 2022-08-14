@@ -18,6 +18,7 @@
         @click="closeMenu"
       >
         <NuxtLink class="btn mb-3" to="/">首页</NuxtLink>
+        <NuxtLink class="btn" to="/product">产品系列</NuxtLink>
         <NuxtLink class="btn" to="/about-us">关于我们</NuxtLink>
       </div>
     </div>

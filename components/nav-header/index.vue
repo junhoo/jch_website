@@ -6,6 +6,7 @@
       </div>
       <div class="flex items-center text-white">
         <NuxtLink class="btn mr-10" to="/">首页</NuxtLink>
+        <NuxtLink class="btn mr-10" to="/product">产品定制</NuxtLink>
         <NuxtLink class="btn" to="/about-us">关于我们</NuxtLink>
       </div>
     </div>
