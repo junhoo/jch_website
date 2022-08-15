@@ -1,11 +1,18 @@
 <template>
-  <div class="home-swiper-container h-full">
+  <div class="home-swiper-container">
     <BaseSwiper :options="swiperOptions" :data="data">
       <template #default="{ imgUrl, mainTitle, title, desc }">
-        <div class="h-full relative">
-          <img class="w-full h-full object-cover" :src="imgUrl" />
+        <div class="flex justify-center h-130 relative overflow-hidden bg-light-600">
+          <div class="w-320 h-120 absolute -top-30">
+            <div class="relative">
+              <img class="object-cover" :src="imgUrl" />
+              <div
+                class="mask w-full h-full absolute left-0 top-0 bg-zinc-800 bg-opacity-50"
+              ></div>
+            </div>
+          </div>
           <div
-            class="w-3/5 absolute left-1/2 top-1/2 text-white z-8 transform -translate-x-1/2 -translate-y-1/2 text-right"
+            class="w-3/5 absolute left-1/2 top-1/3 text-white z-8 transform -translate-x-1/2 -translate-y-1/2 text-right"
           >
             <div data-aos="fade-up" class="text-4xl mb-2">
               {{ mainTitle }}
@@ -21,9 +28,6 @@
               {{ desc }}
             </div>
           </div>
-          <div
-            class="mask w-full h-full absolute left-0 top-0 bg-dark-500 bg-opacity-50"
-          ></div>
         </div>
       </template>
 
@@ -63,7 +67,7 @@ const data = [
     imgUrl,
     mainTitle: '',
     title: '金创鸿不锈钢板材',
-    desc: "金属加工定制",
+    desc: '金属加工定制',
     aos: {
       'data-aos': 'fade-left',
     },
@@ -72,7 +76,7 @@ const data = [
     imgUrl: imgUrl2,
     mainTitle: '',
     title: '金创鸿不锈钢板材',
-    desc: "金属加工定制",
+    desc: '金属加工定制',
     aos: {
       'data-aos': 'flip-up',
     },
@@ -81,7 +85,7 @@ const data = [
     imgUrl: imgUrl3,
     mainTitle: '',
     title: '金创鸿不锈钢板材',
-    desc: "金属加工定制",
+    desc: '金属加工定制',
     aos: {
       'data-aos': 'fade-right',
     },
@@ -101,7 +105,7 @@ const swiperOptions: SwiperOptions = {
 
 <style lang="scss" scoped>
 .home-swiper-container {
-  @apply h-200 bg-gray-200;
+  // @apply h-200 bg-gray-200;
 
   .nav {
     > div {

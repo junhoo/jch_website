@@ -6,5 +6,5 @@ export default defineNuxtConfig({
     head: {},
   },
   modules: ['nuxt-windicss'],
-  css: ['@/assets/styles/global.css', '@/assets/styles/css-icons.css'],
+  css: ['@/assets/styles/global.css', '@/assets/styles/css-icons.css']
 })
